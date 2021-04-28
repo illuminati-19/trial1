@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int number_of_days, fine;
+    scanf("%d", &number_of_days);
+
+    if(number_of_days <= 5)
+    {
+        fine = 10*number_of_days;
+        printf("%d", fine);
+    }
+    if(number_of_days >= 5 && number_of_days <= 10)
+    {
+        fine = 20*(number_of_days - 5) + 50;
+        printf("%d", fine);
+    }
+    if(number_of_days >= 10 && number_of_days <= 30)
+    {
+        fine = 50 + 100 + 50*(number_of_days);
+        printf("%d", fine);
+    }
+    if(number_of_days > 30)
+    {
+        printf("your membership has been cancelled");
+    }
+
+    return 0;
+}
+

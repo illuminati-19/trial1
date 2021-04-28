@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int m,n;
+    scanf("%d\n%d", &m, &n);
+    int r = n/m;
+
+    for (int i = 1; i <= r; i++)
+    {
+        printf("%d ", m*i);
+    }
+
+    return 0;
+}
+
